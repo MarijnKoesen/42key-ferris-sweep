@@ -44,6 +44,9 @@ output/gerbers/%/gerbers.zip: output/routed_pcbs/%.kicad_pcb
 	mkdir -p $(shell dirname $@)
 	${container_cmd} run ${container_args} yaqwsx/kikit:v1.3.0 fab jlcpcb --no-drc --no-assembly $< $(shell dirname $@)
 
+copy-images:
+	cp $(shell dirname $@)/output/routed_pcbs/*.png $(shell dirname $@)/images/
+
 clean:
 	rm -rf output
 
