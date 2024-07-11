@@ -41,7 +41,7 @@ If you would like to modify this:
   See https://github.com/soundmonster/samoklava/actions
 * or:
   * make sure to have Docker CLI and NodeJS installed
-  * run `make setup clean all`
+  * run `make setup clean all copy-images`
   * check the `output` folder for KiCad PCBs and Gerbers
 
 See the [workflow](.github/workflows/build.yml) or the [Makefile](Makefile) for more details.
