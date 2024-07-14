@@ -311,6 +311,16 @@ pcbs:
           rotate: 270
         params:
           orientation: down
+          P4: row_top
+          P5: row_home
+          P6: row_bottom
+          P7: row_thumb
+          P14: col_inner
+          P15: col_index
+          P18: col_middle
+          P19: col_ring
+          P20: col_pinky
+          P21: col_func          
       pad_plus:
         what: pad
         where:
